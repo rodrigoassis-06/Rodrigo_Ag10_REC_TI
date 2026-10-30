@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f6f8fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #1f2328;
+  }
+  .chat-box {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  }
+  .header {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  .header h2 {
+    margin: 0;
+    color: #1e3a8a;
+    font-size: 1.25rem;
+  }
+  .header span {
+    font-size: 0.85rem;
+    color: #64748b;
+  }
+  .message {
+    margin-bottom: 18px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+  .user {
+    background-color: #eff6ff;
+    border-left: 4px solid #2563eb;
+    margin-left: 20px;
+  }
+  .ai {
+    background-color: #f8fafc;
+    border-left: 4px solid #16a34a;
+    margin-right: 20px;
+  }
+  .sender {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+  }
+  .sender-user { color: #2563eb; }
+  .sender-ai { color: #16a34a; }
+</style>
+</head>
+<body>
+
+<div class="chat-box">
+  <div class="header">
+    <h2>Registro de Diálogo e Co-criação com Inteligência Artificial</h2>
+    <span>Atividade de Recuperação Agenda 10 - Tecnologias da Informação I (Scrum no Organiza+)</span>
+  </div>
+
+  <div class="message user">
+    <div class="sender sender-user">Rodrigo Assis (Aluno):</div>
+    Eu quero que você atue como um especialista em Scrum. Na startup do aplicativo "Organiza+", enfrentamos mudanças contínuas de requisitos trazidas pelo cliente e precisamos entregar versões funcionais a cada duas semanas. Como o Scrum nos ajuda a resolver isso sem desestabilizar a equipe de 5 desenvolvedores?
+  </div>
+
+  <div class="message ai">
+    <div class="sender sender-ai">Especialista Scrum (IA):</div>
+    Excelente cenário, Rodrigo. O Scrum é ideal para essa situação por quatro razões centrais:<br><br>
+    <strong>1. Time-box de 2 semanas:</strong> Sprints quinzenais casam perfeitamente com a exigência de entregas funcionais periódicas.<br>
+    <strong>2. O papel do Product Owner (PO):</strong> O cliente não deve interromper os desenvolvedores no meio da Sprint. Todas as novas ideias (calendário, redes sociais) são enviadas ao PO, que as registra e prioriza no <em>Product Backlog</em>.<br>
+    <strong>3. Proteção da Sprint ativa:</strong> Durante os 14 dias da Sprint, o escopo aprovado no <em>Sprint Planning</em> fica congelado, garantindo foco e qualidade.<br>
+    <strong>4. Sprint Review com o cliente:</strong> No último dia da Sprint, o time apresenta o incremento funcional ao cliente, colhendo feedbacks para alimentar o próximo ciclo.
+  </div>
+
+  <div class="message user">
+    <div class="sender sender-user">Rodrigo Assis (Aluno):</div>
+    E quanto à equipe de 5 pessoas com níveis desiguais de experiência ágil? O que o Scrum recomenda para nivelá-los rapidamente?
+  </div>
+
+  <div class="message ai">
+    <div class="sender sender-ai">Especialista Scrum (IA):</div>
+    Aqui entram dois elementos fundamentais:<br>
+    • <strong>Scrum Master ativo:</strong> Deve atuar como mentor ágil, facilitando os ritos (Daily diária de 15min) e removendo impedimentos técnicos e conceituais.<br>
+    • <strong>Definition of Done (DoD) clara e Pair Programming:</strong> Estabelecer critérios objetivos de conclusão (ex: testes, code review entre membros mais e menos experientes) garante que o código entregue mantenha qualidade uniforme.
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px;
+    background-color: #f8fafc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+  }
+  .infografico {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  }
+  .header {
+    text-align: center;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    margin: 0 0 6px 0;
+    color: #1e3a8a;
+    font-size: 22px;
+  }
+  .header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 20px;
+  }
+  .card {
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 16px;
+    border-left: 4px solid #2563eb;
+  }
+  .card-danger { border-left-color: #dc2626; }
+  .card-success { border-left-color: #16a34a; }
+  .card-warning { border-left-color: #d97706; }
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .card ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .sprint-flow {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+  .sprint-flow h3 {
+    margin-top: 0;
+    font-size: 15px;
+    color: #1e3a8a;
+    text-align: center;
+  }
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .step-box {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 11px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .step-num {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 10px;
+  }
+  .step-title {
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 3px;
+  }
+  .solution-box {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .solution-box h3 {
+    margin-top: 0;
+    color: #1d4ed8;
+    font-size: 14px;
+  }
+  .solution-box p {
+    font-size: 12px;
+    margin: 4px 0 0 0;
+    line-height: 1.5;
+  }
+  .footer-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 11px;
+    color: #94a3b8;
+  }
+</style>
+</head>
+<body>
+
+<div class="infografico">
+  <div class="header">
+    <h1>INFOGRÁFICO: IMPLANTAÇÃO DO SCRUM NO APP "ORGANIZA+"</h1>
+    <p>Agenda 10 - Tecnologias da Informação I (Recuperação) | Aluno: Rodrigo Assis</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="card card-danger">
+      <h3 style="color: #dc2626;">Desafios do Cenário</h3>
+      <ul>
+        <li><strong>Mudanças Constantes:</strong> Cliente adicionando requisitos (calendário, redes sociais).</li>
+        <li><strong>Prazo Curto:</strong> Necessidade de versões funcionais a cada 2 semanas.</li>
+        <li><strong>Equipe Mista:</strong> 5 desenvolvedores com diferentes níveis de maturidade ágil.</li>
+      </ul>
+    </div>
+
+    <div class="card card-success">
+      <h3 style="color: #16a34a;">Papéis Scrum Definidos</h3>
+      <ul>
+        <li><strong>Product Owner (PO):</strong> Gerencia o Backlog, filtra e prioriza demandas do cliente.</li>
+        <li><strong>Scrum Master:</strong> Facilita ritos, remove impedimentos e nivela a equipe.</li>
+        <li><strong>Developers (5 membros):</strong> Focam na entrega técnica do incremento da Sprint.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sprint-flow">
+    <h3>Fluxo da Sprint de 2 Semanas (Time-box Fixo)</h3>
+    <div class="steps">
+      <div class="step-box">
+        <span class="step-num">1</span>
+        <div class="step-title">Sprint Planning</div>
+        <div>Define a meta e seleciona itens do Product Backlog</div>
+      </div>
+      <div class="step-box">
+        <span class="step-num">2</span>
+        <div class="step-title">Daily Scrum</div>
+        <div>Reunião diária de 15min para alinhamento e bloqueios</div>
+      </div>
+      <div class="step-box">
+        <span class="step-num">3</span>
+        <div class="step-title">Desenvolvimento</div>
+        <div>Foco no Sprint Backlog sem alterações no escopo ativo</div>
+      </div>
+      <div class="step-box">
+        <span class="step-num">4</span>
+        <div class="step-title">Sprint Review</div>
+        <div>Demonstração da versão funcional a cada 2 semanas ao cliente</div>
+      </div>
+      <div class="step-box">
+        <span class="step-num">5</span>
+        <div class="step-title">Retrospective</div>
+        <div>Melhoria contínua dos processos da equipe</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solution-box">
+    <h3>Como Lidar com as Mudanças Contínuas do Cliente</h3>
+    <p>
+      O cliente não tem o poder de alterar o que está em desenvolvimento na Sprint atual. Suas novas ideias entram no <strong>Product Backlog</strong>, onde o <strong>Product Owner</strong> avalia valor e prioridade. Na Sprint Planning seguinte, as novas funcionalidades mais relevantes são planejadas, mantendo a estabilidade técnica e a entrega quinzenal.
+    </p>
+  </div>
+
+  <div class="footer-note">
+    Aplicativo Organiza+ &bull; Metodologia Ágil Scrum &bull; EAD TEC Centro Paula Souza
+  </div>
+</div>
+
+</body>
+</html>
